@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: jsdoc.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: jsdoc.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>zoom = {};
+
+if (typeof window.onload !== "function") {
+  window.onload = function () {};
+}
+
+/**
+ * Used for internal purposes in zoom.js, see if window.onload ran
+ * @param {boolean} bool console.logs whether window.onload ran or not
+ * @returns {boolean} Whether the window is loaded or not
+ * @license MIT
+ */
+zoom.checkLoaded = function (bool) {
+  let loaded =
+    document.readyState === "complete" || document.readyState === "interactive";
+  if (bool == true) {
+    console.log(loaded);
+  }
+  return loaded;
+};
+
+if (zoom.checkLoaded()) {
+  document.body.style["-moz-transform"] = "scale(1)";
+  document.body.style["-moz-transform-origin"] = "0 0";
+  document.body.style.zoom = 1;
+}
+
+window.onload = (function () {
+  var cached_function = window.onload;
+
+  return function () {
+    var result = cached_function.apply(this, arguments);
+    document.body.style["-moz-transform"] = "scale(1)";
+    document.body.style["-moz-transform-origin"] = "0 0";
+    document.body.style.zoom = 1;
+    return result;
+  };
+})();
+
+/**
+ * A function to zoom in and out cross-browser
+ * @param {number} int The scale at which to zoom in or out. The smaller the more it zooms out.
+ * @returns {number} The current zoom value
+ * @license MIT
+ */
+zoom.zoom = function (int) {
+  zoom.specify(function (givenInteger) {
+    return givenInteger * int;
+  }, int);
+  return zoom.get();
+};
+
+/**
+ * Get the current zoom of the page
+ * @param {boolean} bool console.logs the current zoom of the page
+ * @returns {number} The current zoom value
+ * @license MIT
+ */
+zoom.get = function (bool) {
+  if (bool == true) {
+    console.log(parseFloat(document.body.style.zoom));
+  }
+  return parseFloat(document.body.style.zoom);
+};
+
+/**
+ * Specify a function given data and the zoom value to set the zoom
+ * @param {function} specifiedFunction A function given the current zoom. The returned value will be used for the zoom
+ * @param {any} data Will be passed into the specifiedFunction as the second argument (optional)
+ * @returns {number} The current zoom value
+ * @license MIT
+ */
+zoom.specify = function (specifiedFunction, data) {
+  document.body.style["-moz-transform"] =
+    "scale(" +
+    specifiedFunction(
+      parseFloat(
+        document.body.style["-moz-transform"].substring(
+          6,
+          document.body.style["-moz-transform"].length - 1
+        )
+      ),
+      data
+    ) +
+    ")";
+  document.body.style.zoom = specifiedFunction(zoom.get(), data);
+  return zoom.get();
+};
+
+/**
+ * Additive into the zoom
+ * @param {number} int The amount in which to zoom in and out.
+ * @returns {number} The current zoom value
+ * @license MIT
+ */
+zoom.add = function (int) {
+  zoom.specify(function (givenInteger) {
+    return givenInteger + int;
+  }, int);
+  return zoom.get();
+};
+
+/**
+ * Opposite of zoom.add, remove from the zoom value
+ * @param {number} int The amount in which to zoom in and out. Opposite of zoom.add
+ * @returns {number} The current zoom value
+ * @license MIT
+ */
+zoom.minus = function (int) {
+  return zoom.add(-1 * int);
+};
+
+/**
+ * Invert the current zoom value
+ * @returns {number} The current zoom value
+ * @license MIT
+ */
+zoom.invert = function () {
+  zoom.specify(function (givenInteger) {
+    return 1 / givenInteger;
+  });
+  return zoom.get();
+};
+
+/**
+ * Opposite of zoom.zppm, divide the current zoom value
+ * @param {number} int The amount in which to zoom in and out. Opposite of zoom.zoom
+ * @returns {number} The current zoom value
+ * @license MIT
+ */
+zoom.inverseZoom = function (int) {
+  zoom.specify(function (givenInteger) {
+    return givenInteger / int;
+  }, int);
+  return zoom.get();
+};
+
+zoom.name = "zoom.js";
+zoom.version = "1.0";
+zoom.license = "MIT";
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h2><a href="jsdoc.js.html">Source</a></h2><h3>Global</h3><ul><li><a href="global.html#add">add</a></li><li><a href="global.html#checkLoaded">checkLoaded</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#inverseZoom">inverseZoom</a></li><li><a href="global.html#invert">invert</a></li><li><a href="global.html#minus">minus</a></li><li><a href="global.html#specify">specify</a></li><li><a href="global.html#zoom">zoom</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.5</a> on Sat Sep 12 2020 20:46:23 GMT-0700 (Pacific Daylight Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
