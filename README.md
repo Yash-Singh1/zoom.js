@@ -4,13 +4,13 @@ A cross-browser Javascript Library to zoom in and out
 #### Online
 To import the `zoom.js` inside your application, include the following code in your HTML file:
 ```html
-<script src="https://yash-singh1.github.io/zoom.js/index.js/"></script>
+<script src="https://yash-singh1.github.io/zoom.js/index.js"></script>
 ```
-To view the raw code go to => https://yash-singh1.github.io/zoom.js/index.js/.
+To view the raw code go to => https://yash-singh1.github.io/zoom.js/index.js.
 #### Locally
 To use `zoom.js` locally, run:
 ```bash
-curl -s -o- https://yash-singh1.github.io/zoom.js/index.js/ > zoom.js
+curl -s -o- https://yash-singh1.github.io/zoom.js/index.js > zoom.js
 ```
 Now you can import the library using:
 ```html
