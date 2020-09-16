@@ -51,7 +51,7 @@ root/
        |_____ testing.js
 ```
 #### Source
-To view the repository, go to: [https://github.com/Yash-Singh1/zoom.js](https://github.com/Yash-Singh1/zoom.js)
+To view the repository, go to: [https://github.com/Yash-Singh1/zoom.js](https://github.com/Yash-Singh1/zoom.js)<br>
 To view the source code of the `index.js`, go to: [https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html](https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html)
 ## Documentation
 `zoom.js` allows you to control the zoom through the `zoom` object. Let's take a look at the `zoom` object:
