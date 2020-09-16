@@ -52,7 +52,7 @@ root/
 ```
 #### Source
 To view the repository, go to: [https://github.com/Yash-Singh1/zoom.js](https://github.com/Yash-Singh1/zoom.js)
-To view the source code of the `index.js`, go to: [https://yash-singh1.github.io/zoom.js/zoom.js.html](https://yash-singh1.github.io/zoom.js/zoom.js.html)
+To view the source code of the `index.js`, go to: [https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html](https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html)
 ## Documentation
 `zoom.js` allows you to control the zoom through the `zoom` object. Let's take a look at the `zoom` object:
 #### Strings
@@ -63,7 +63,7 @@ To view the source code of the `index.js`, go to: [https://yash-singh1.github.io
 - `license`
 	- The license key contains the license type: `MIT`
 #### Functions
-The documentation for `zoom.js` is at: [https://yash-singh1.github.io/zoom.js/zoom.js.html](https://yash-singh1.github.io/zoom.js/zoom.js.html). It was built using `jsdoc`.
+The documentation for `zoom.js` is at: [https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html](https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html). It was built using `jsdoc`.
 ## Testing
 ***Note: This assumes that you have `NodeJS` installed***
 To run tests for `zoom.js`:
@@ -83,4 +83,5 @@ python generateJsdoc.py
 ```
 Optional: To format the codebase, run `prettier ./` assuming that you have `prettier` installed.
 ## Contributing
-Contributions are welcome!
+Contributions are welcome!<br>
+***Not rendering properly? View on [Github](https://github.com/Yash-Singh1/zoom.js#readme)***
