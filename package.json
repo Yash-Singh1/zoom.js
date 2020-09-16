@@ -1,0 +1,14 @@
+{
+  "name": "zoom.js",
+  "version": "1.0.0",
+  "description": "A script that hosts test for zoom.js",
+  "main": "index.js",
+  "scripts": {
+    "build": "python generateJsdoc.py"
+  },
+  "author": "Yash Singh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -1,3 +1,9 @@
+/**
+ * @file The main source code for zoom.js
+ * @author Yash Singh
+ * @license MIT
+ */
+
 zoom = {};
 
 if (typeof window.onload !== "function") {
@@ -101,6 +107,18 @@ zoom.add = function (int) {
 };
 
 /**
+ * Allows you to set the zoom value to a number
+ * @param {number} int The integer to set the zoom to
+ * @returns {number} The current zoom value
+ */
+zoom.set = function (int) {
+  zoom.specify(function (givenInteger, data) {
+    return data;
+  }, int);
+  return zoom.get();
+};
+
+/**
  * Opposite of zoom.add, remove from the zoom value
  * @param {number} int The amount in which to zoom in and out. Opposite of zoom.add
  * @returns {number} The current zoom value
@@ -133,6 +151,17 @@ zoom.inverseZoom = function (int) {
     return givenInteger / int;
   }, int);
   return zoom.get();
+};
+
+/**
+ * Reset the zoom value to original
+ * @returns {number} The current zoom value
+ */
+zoom.reset = function () {
+  document.body.style["-moz-transform"] = "scale(1)";
+  document.body.style["-moz-transform-origin"] = "0 0";
+  document.body.style.zoom = 1;
+  return 1;
 };
 
 zoom.name = "zoom.js";
