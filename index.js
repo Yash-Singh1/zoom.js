@@ -50,10 +50,9 @@ window.onload = (function () {
  * @license MIT
  */
 zoom.zoom = function (int) {
-  zoom.specify(function (givenInteger) {
+  return zoom.specify(function (givenInteger) {
     return givenInteger * int;
   }, int);
-  return zoom.get();
 };
 
 /**
@@ -100,10 +99,9 @@ zoom.specify = function (specifiedFunction, data) {
  * @license MIT
  */
 zoom.add = function (int) {
-  zoom.specify(function (givenInteger) {
+  return zoom.specify(function (givenInteger) {
     return givenInteger + int;
   }, int);
-  return zoom.get();
 };
 
 /**
@@ -112,10 +110,9 @@ zoom.add = function (int) {
  * @returns {number} The current zoom value
  */
 zoom.set = function (int) {
-  zoom.specify(function (givenInteger, data) {
+  return zoom.specify(function (givenInteger, data) {
     return data;
   }, int);
-  return zoom.get();
 };
 
 /**
@@ -134,10 +131,9 @@ zoom.minus = function (int) {
  * @license MIT
  */
 zoom.invert = function () {
-  zoom.specify(function (givenInteger) {
+  return zoom.specify(function (givenInteger) {
     return 1 / givenInteger;
   });
-  return zoom.get();
 };
 
 /**
@@ -147,10 +143,9 @@ zoom.invert = function () {
  * @license MIT
  */
 zoom.inverseZoom = function (int) {
-  zoom.specify(function (givenInteger) {
+  return zoom.specify(function (givenInteger) {
     return givenInteger / int;
   }, int);
-  return zoom.get();
 };
 
 /**
