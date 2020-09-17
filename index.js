@@ -1,5 +1,6 @@
 /**
  * @file The main source code for zoom.js
+ * @version 1.0
  * @author Yash Singh
  * @license MIT
  */
