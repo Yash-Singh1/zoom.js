@@ -1,30 +1,31 @@
-function sleep() {
-  return new Promise((resolve) => setTimeout(resolve, 1000));
-}
+#!/usr/bin/env node
+process.title = "testzoom.js";
+const express = require("express");
+const fs = require("fs");
+var app = express();
 
-function testFunctionality(confirmMessage, succeded) {
-  confirmed = confirm(confirmMessage);
-  if (!confirmed) {
-    zoom.reset();
-    throw new Error("Failure in testing " + succeded + "!");
-  } else {
-    console.info(succeded + " succeded");
-  }
-}
+app.get("/test/interactive.html", (req, res) => {
+  res.send(fs.readFileSync("interactive.html", "utf-8"));
+});
 
-async function test() {
-  zoom.zoom(10);
-  await sleep();
-  testFunctionality("Did you see the page zoom in?", "zoom.zoom");
-  zoom.add(5);
-  await sleep();
-  testFunctionality("Did you see the page zoom in?", "zoom.add");
-  zoom.minus(10);
-  await sleep();
-  testFunctionality("Did you see the page zoom out?", "zoom.minus");
-  zoom.invert();
-  await sleep();
-  testFunctionality("Did the page zoom out?", "zoom.invert");
-  console.log("SUCCESS!!!");
-  zoom.reset();
-}
+app.get("/index.js", (req, res) => {
+  res.send(fs.readFileSync("../index.js", "utf-8"));
+});
+
+app.get("/test/interactive.js", (req, res) => {
+  res.send(fs.readFileSync("interactive.js", "utf-8"));
+});
+
+app.get("/favicon.ico", (req, res) => {
+  res.sendStatus(204);
+});
+
+app.get("/test/auto.js", (req, res) => {
+  res.send(fs.readFileSync("auto.js", "utf-8"));
+});
+
+app.get("/test/auto.html", (req, res) => {
+  res.send(fs.readFileSync("auto.html", "utf-8"));
+});
+
+app.listen(1073);

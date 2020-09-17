@@ -1,10 +1,10 @@
 {
-  "name": "testzoom.js",
+  "name": "test-zoom.js",
   "version": "1.0.0",
   "description": "A script that hosts test for zoom.js",
-  "main": "testing.js",
+  "main": "test.js",
   "scripts": {
-    "test": "npm install && node testing.js",
+    "test": "npm install && node test.js",
     "dev": "npm run dev"
   },
   "author": "Yash Singh",
