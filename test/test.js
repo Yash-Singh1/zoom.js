@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-process.title = "testzoom.js";
+process.title = "test-zoom.js";
 const express = require("express");
 const fs = require("fs");
 var app = express();

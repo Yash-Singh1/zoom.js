@@ -101,7 +101,7 @@ To run tests for `zoom.js`:
 - Go to the `test/` directory at the root: `cd zoom.js/test/`
 - Run the npm `test` script: `npm run test`
 - Now you can go to: `localhost:1073/test/interactive.html` to run the tests interactively, and `localhost:1073/test/auto.html` to run the tests automatically
-- To run the tests, open up the console and run `test()` and there will be a series of zooming and confirm messages
+- To run the tests, open up the console and run `test()` and there will be a series of zooming and confirm messages in interactive mode, and everything will automatically run in auto mode
 
 ## Building Docs
 
@@ -118,6 +118,16 @@ python generateJsdoc.py
 ```
 
 Optional: To format the codebase, run `prettier ./` assuming that you have `prettier` installed.
+
+## Testing Docs
+
+To test the documentation:
+
+- Run `git clone https://github.com/Yash-Singh1/zoom.js.git` to clone the source
+- Go to the `test/` directory at the root: `cd zoom.js/test/`
+- Run the npm `docs` script: `npm run docs`
+- Now you can go to: `localhost:1079/index.html` to preview the documentation
+  Keep in mind that fonts can't be decoded and previewed.
 
 ## Contributing
 

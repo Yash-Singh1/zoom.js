@@ -5,7 +5,8 @@
   "main": "test.js",
   "scripts": {
     "test": "npm install && node test.js",
-    "dev": "npm run dev"
+    "dev": "npm run dev",
+    "docs": "npm install && node preview.js"
   },
   "author": "Yash Singh",
   "license": "MIT",
