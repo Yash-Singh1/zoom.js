@@ -50,24 +50,29 @@ The following is the current file layout of the codebase:
 
 ```
 root/
-|_____ .gitignore
-|_____ index.js
 |_____ jsdoc/
-       |_____ fonts/
-       |_____ global.html
-       |_____ index.html
-       |_____ scripts/
-       |_____ styles/
-       |_____ zoom.js.html
-|_____ LICENSE
-|_____ README.md
+|      |_____ fonts/
+|      |_____ global.html
+|      |_____ index.html
+|      |_____ scripts/
+|      |_____ styles/
+|      |_____ zoom.js.html
 |_____ test/
-       |_____ .gitignore
-       |_____ index.html
-       |_____ package-lock.json
-       |_____ package.json
-       |_____ test.js
-       |_____ testing.js
+|      |_____ .gitignore
+|      |_____ auto.html
+|      |_____ auto.js
+|      |_____ interactive.html
+|      |_____ interactive.js
+|      |_____ package-lock.json
+|      |_____ package.json
+|      |_____ preview.js
+|      |_____ test.js
+|_____ .gitignore
+|_____ generateJsdoc.py
+|_____ index.js
+|_____ LICENSE
+|_____ package.json
+|_____ README.md
 ```
 
 #### Source
