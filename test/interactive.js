@@ -25,6 +25,12 @@ async function test() {
   zoom.invert();
   await sleep();
   testFunctionality("Did the page zoom out?", "zoom.invert");
+  zoom.set(5);
+  await sleep();
+  testFunctionality("Did you see the page zoom in?", "zoom.set");
+  zoom.inverseZoom(2);
+  await sleep();
+  testFunctionality("Did you see the page zoom out?", "zoom.inverseZoom");
   console.log("SUCCESS!!!");
   zoom.reset();
 }

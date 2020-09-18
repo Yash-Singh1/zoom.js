@@ -17,6 +17,10 @@ function test() {
   testFunctionality(5, "zoom.minus");
   zoom.invert();
   testFunctionality(0.2, "zoom.invert");
+  zoom.set(5);
+  testFunctionality(5, "zoom.set");
+  zoom.inverseZoom(2);
+  testFunctionality(2.5, "zoom.inverseZoom");
   console.log("SUCCESS!!!");
   zoom.reset();
 }
