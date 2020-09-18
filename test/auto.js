@@ -1,7 +1,3 @@
-function sleep() {
-  return new Promise((resolve) => setTimeout(resolve, 1000));
-}
-
 function testFunctionality(confirmInt, succeded) {
   confirmed = zoom.get() === confirmInt;
   if (!confirmed) {
@@ -12,7 +8,7 @@ function testFunctionality(confirmInt, succeded) {
   }
 }
 
-async function test() {
+function test() {
   zoom.zoom(10);
   testFunctionality(10, "zoom.zoom");
   zoom.add(5);
