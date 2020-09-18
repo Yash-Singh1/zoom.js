@@ -123,7 +123,7 @@ zoom.set = function (int) {
  * @license MIT
  */
 zoom.minus = function (int) {
-  return zoom.add(-1 * int);
+  return this.add(-1 * int);
 };
 
 /**
