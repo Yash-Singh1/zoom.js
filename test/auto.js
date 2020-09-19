@@ -21,6 +21,8 @@ function test() {
   testFunctionality(5, "zoom.set");
   zoom.inverseZoom(2);
   testFunctionality(2.5, "zoom.inverseZoom");
+  zoom.reset();
+  testFunctionality(1, "zoom.reset");
   console.log("SUCCESS!!!");
   zoom.reset();
 }
