@@ -71,8 +71,8 @@ zoom.get = function (bool) {
 
 /**
  * Specify a function given data and the zoom value to set the zoom
- * @param {function} specifiedFunction A function given the current zoom. The returned value will be used for the zoom
- * @param {any} data Will be passed into the specifiedFunction as the second argument (optional)
+ * @param {function} specifiedFunction A function given the current zoom as the first argument and the data parameter as the second argument. The returned value will be used for the zoom
+ * @param {any} [data] Will be passed into the specifiedFunction as the second argument
  * @returns {number} The current zoom value
  * @license MIT
  */
