@@ -108,6 +108,8 @@ To run tests for `zoom.js`:
 - Now you can go to: `localhost:1073/test/interactive.html` to run the tests interactively, and `localhost:1073/test/auto.html` to run the tests automatically
 - To run the tests, open up the console and run `test()` and there will be a series of zooming and confirm messages in interactive mode, and everything will automatically run in auto mode
 
+To run the tests without `NodeJS`, you can go to: [https://yash-singh1.github.io/zoom.js/test/interactive.html](https://yash-singh1.github.io/zoom.js/test/interactive.html) for interactive and [https://yash-singh1.github.io/zoom.js/test/auto.html](https://yash-singh1.github.io/zoom.js/test/auto.html) for auto.
+
 ## Building Docs
 
 To build the documentation, you must have `python` installed on your computer. Either of the following will build the JsDocs from the root directory of the repository:
@@ -122,7 +124,7 @@ or
 python generateJsdoc.py
 ```
 
-Optional: To format the codebase, run `prettier ./` assuming that you have `prettier` installed.
+Optional: To format the codebase, run `prettier --write ./` assuming that you have `prettier` installed.
 
 ## Testing Docs
 
@@ -134,7 +136,9 @@ To test the documentation:
 - Now you can go to: `localhost:1079/index.html` to preview the documentation
   Keep in mind that fonts can't be decoded and previewed.
 
+Docs are available on: [https://yash-singh1.github.io/zoom.js/jsdoc/](https://yash-singh1.github.io/zoom.js/jsdoc/) for the current live Github Pages.
+
 ## Contributing
 
-Contributions are welcome!<br>
+Contributions are welcome! You can do anything from adding a new feature to formatting the codebase. Any proper updates are accepted. When creating an issue, make sure that you ran the tests and describe how it is different in other browsers<br>
 **_Not rendering properly? View on [Github](https://github.com/Yash-Singh1/zoom.js#readme)_**
