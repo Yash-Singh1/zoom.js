@@ -36,4 +36,5 @@ async function test() {
   testFunctionality("Did you see the page zoom out?", "zoom.reset");
   console.log("SUCCESS!!!");
   zoom.reset();
+  return true;
 }

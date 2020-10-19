@@ -25,4 +25,5 @@ function test() {
   testFunctionality(1, "zoom.reset");
   console.log("SUCCESS!!!");
   zoom.reset();
+  return true;
 }

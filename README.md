@@ -134,7 +134,6 @@ To test the documentation:
 - Go to the `test/` directory at the root: `cd zoom.js/test/`
 - Run the npm `docs` script: `npm run docs`
 - Now you can go to: `localhost:1079/index.html` to preview the documentation
-  Keep in mind that fonts can't be decoded and previewed.
 
 Docs are available on: [https://yash-singh1.github.io/zoom.js/jsdoc/](https://yash-singh1.github.io/zoom.js/jsdoc/) for the current live Github Pages.
 
