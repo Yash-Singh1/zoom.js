@@ -52,10 +52,10 @@ The following is the current file layout of the codebase:
 root/
 |_____ jsdoc/
 |      |_____ fonts/
-|      |_____ global.html
-|      |_____ index.html
 |      |_____ scripts/
 |      |_____ styles/
+|      |_____ global.html
+|      |_____ index.html
 |      |_____ zoom.js.html
 |_____ test/
 |      |_____ .gitignore
