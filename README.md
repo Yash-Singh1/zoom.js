@@ -95,7 +95,7 @@ To view the source code of the `index.js`, go to: [https://yash-singh1.github.io
 
 #### Functions
 
-The documentation for `zoom.js` is at: [https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html](https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html). It was built using `jsdoc`.
+The documentation for `zoom.js` is at: [https://yash-singh1.github.io/zoom.js/jsdoc/global.html](https://yash-singh1.github.io/zoom.js/jsdoc/zoom.js.html). It was built using `jsdoc`.
 
 ## Testing
 
