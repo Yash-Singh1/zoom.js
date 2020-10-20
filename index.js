@@ -7,6 +7,27 @@
 
 zoom = {};
 
+/**
+ * The name of the program => zoom.js
+ * @type {string}
+ * @const
+ */
+zoom.name = "zoom.js";
+
+/**
+ * The current version
+ * @type {string}
+ * @constant
+ */
+zoom.version = "1.0";
+
+/**
+ * The license used => MIT
+ * @type {string}
+ * @constant
+ */
+zoom.license = "MIT";
+
 if (typeof window.onload !== "function") {
   window.onload = function () {};
 }
@@ -159,7 +180,3 @@ zoom.reset = function () {
   document.body.style.zoom = 1;
   return 1;
 };
-
-zoom.name = "zoom.js";
-zoom.version = "1.0";
-zoom.license = "MIT";
