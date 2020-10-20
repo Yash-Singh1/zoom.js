@@ -139,5 +139,7 @@ Docs are available on: [https://yash-singh1.github.io/zoom.js/jsdoc/](https://ya
 
 ## Contributing
 
-Contributions are welcome! You can do anything from adding a new feature to formatting the codebase. Any proper updates are accepted. When creating an issue, make sure that you ran the tests and describe how it is different in other browsers<br>
+Contributions are welcome! You can do anything from adding a new feature to formatting the codebase. Any proper updates are accepted. When creating an issue, make sure that you ran the tests and describe how it is different in other browsers
+
+
 **_Not rendering properly? View on [Github](https://github.com/Yash-Singh1/zoom.js#readme)_**
