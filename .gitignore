@@ -1,2 +1,10 @@
-# Ignore the .idea directory
+# Editor Configuration
 .idea/
+.vscode/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Mac Specific
+.DS_Store
