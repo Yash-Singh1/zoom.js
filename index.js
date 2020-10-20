@@ -9,6 +9,7 @@ zoom = {};
 
 /**
  * The name of the program => zoom.js
+ * @license MIT
  * @type {string}
  * @const
  */
@@ -16,6 +17,7 @@ zoom.name = "zoom.js";
 
 /**
  * The current version
+ * @license MIT
  * @type {string}
  * @constant
  */
@@ -23,6 +25,7 @@ zoom.version = "1.0";
 
 /**
  * The license used => MIT
+ * @license MIT
  * @type {string}
  * @constant
  */
@@ -130,6 +133,7 @@ zoom.add = function (int) {
  * Allows you to set the zoom value to a number
  * @param {number} int The integer to set the zoom to
  * @returns {number} The current zoom value
+ * @license MIT
  */
 zoom.set = function (int) {
   return this.specify(function (givenInteger, data) {
@@ -173,6 +177,7 @@ zoom.inverseZoom = function (int) {
 /**
  * Reset the zoom value to original
  * @returns {number} The current zoom value
+ * @license MIT
  */
 zoom.reset = function () {
   document.body.style["-moz-transform"] = "scale(1)";
