@@ -8,7 +8,7 @@ app.get("/*", (req, res) => {
     return res.sendStatus(204);
   }
   res.sendFile(req.path.substring(1), {
-    root: "../jsdoc/",
+    root: "jsdoc/",
   });
 });
 

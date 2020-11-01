@@ -31,42 +31,29 @@ zoom.version = "1.0";
  */
 zoom.license = "MIT";
 
-if (typeof window.onload !== "function") {
-  window.onload = function () {};
-}
-
-/**
- * Used for internal purposes in zoom.js, see if window.onload ran
- * @param {boolean} bool console.logs whether window.onload ran or not
- * @returns {boolean} Whether the window is loaded or not
- * @license MIT
- */
-zoom.checkLoaded = function (bool) {
-  let loaded =
-    document.readyState === "complete" || document.readyState === "interactive";
-  if (bool == true) {
-    console.log(loaded);
-  }
-  return loaded;
-};
-
-if (zoom.checkLoaded()) {
+if (
+  document.readyState === "complete" ||
+  document.readyState === "interactive"
+) {
   document.body.style["-moz-transform"] = "scale(1)";
   document.body.style["-moz-transform-origin"] = "0 0";
   document.body.style.zoom = 1;
+} else {
+  if (typeof window.onload !== "function") {
+    window.onload = function () {};
+  }
+  window.onload = (function () {
+    var cached_function = window.onload;
+
+    return function () {
+      var result = cached_function.apply(this, arguments);
+      document.body.style["-moz-transform"] = "scale(1)";
+      document.body.style["-moz-transform-origin"] = "0 0";
+      document.body.style.zoom = 1;
+      return result;
+    };
+  })();
 }
-
-window.onload = (function () {
-  var cached_function = window.onload;
-
-  return function () {
-    var result = cached_function.apply(this, arguments);
-    document.body.style["-moz-transform"] = "scale(1)";
-    document.body.style["-moz-transform-origin"] = "0 0";
-    document.body.style.zoom = 1;
-    return result;
-  };
-})();
 
 /**
  * A function to zoom in and out cross-browser

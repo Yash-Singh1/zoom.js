@@ -4,8 +4,12 @@
   "description": "A script that hosts test for zoom.js",
   "main": "index.js",
   "scripts": {
-    "build": "python generateJsdoc.py"
+    "test": "npm install && node test/test.js",
+    "docs": "npm install && node test/docs-preview.js"
   },
   "author": "Yash Singh",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }

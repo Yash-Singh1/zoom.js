@@ -64,7 +64,6 @@ root/
 |      |_____ docs-preview.js
 |      |_____ interactive.html
 |      |_____ interactive.js
-|      |_____ package.json
 |      |_____ test.js
 |_____ .gitignore
 |_____ generateJsdoc.py
@@ -104,7 +103,7 @@ The documentation for `zoom.js` is at: [https://yash-singh1.github.io/zoom.js/js
 To run tests for `zoom.js`:
 
 - Run `git clone https://github.com/Yash-Singh1/zoom.js.git`
-- Go to the `test/` directory at the root: `cd zoom.js/test/`
+- Go to the root of the repositiory: `cd zoom.js/`
 - Run the npm `test` script: `npm run test`
 - Now you can go to: `localhost:1073/test/interactive.html` to run the tests interactively, and `localhost:1073/test/auto.html` to run the tests automatically
 - To run the tests, open up the console and run `test()` and there will be a series of zooming and confirm messages in interactive mode, and everything will automatically run in auto mode
@@ -114,12 +113,6 @@ To run the tests without `NodeJS`, you can go to: [https://yash-singh1.github.io
 ## Building Docs
 
 To build the documentation, you must have `python` installed on your computer. Either of the following will build the JsDocs from the root directory of the repository:
-
-```bash
-npm run build
-```
-
-or
 
 ```bash
 python generateJsdoc.py
@@ -132,7 +125,7 @@ Optional: To format the codebase, run `prettier --write ./` assuming that you ha
 To test the documentation:
 
 - Run `git clone https://github.com/Yash-Singh1/zoom.js.git` to clone the source
-- Go to the `test/` directory at the root: `cd zoom.js/test/`
+- Go to the root of the repository: `cd zoom.js/`
 - Run the npm `docs` script: `npm run docs`
 - Now you can go to: `localhost:1079/index.html` to preview the documentation
 
