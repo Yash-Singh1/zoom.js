@@ -27,3 +27,16 @@ function test() {
   zoom.reset();
   return true;
 }
+
+window.onload = (function () {
+  var cached_function = window.onload;
+
+  return function () {
+    var result = cached_function.apply(this, arguments);
+    var urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("start") === "true") {
+      test();
+    }
+    return result;
+  };
+})();
