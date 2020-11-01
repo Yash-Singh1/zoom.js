@@ -61,11 +61,10 @@ root/
 |      |_____ .gitignore
 |      |_____ auto.html
 |      |_____ auto.js
+|      |_____ docs-preview.js
 |      |_____ interactive.html
 |      |_____ interactive.js
-|      |_____ package-lock.json
 |      |_____ package.json
-|      |_____ preview.js
 |      |_____ test.js
 |_____ .gitignore
 |_____ generateJsdoc.py
@@ -74,6 +73,8 @@ root/
 |_____ package.json
 |_____ README.md
 ```
+
+The `index.js` file is the main source code. `generateJsdoc.py` generates documentations in the `jsdoc/` directory. The `test/` directory contains tests.
 
 #### Source
 

@@ -1,16 +1,15 @@
 {
   "name": "test-zoom.js",
   "version": "1.0.0",
-  "description": "A script that hosts test for zoom.js",
+  "description": "The zoom.js testing",
   "main": "test.js",
   "scripts": {
     "test": "npm install && node test.js",
-    "dev": "npm run dev",
-    "docs": "npm install && node preview.js"
+    "docs": "npm install && node docs-preview.js"
   },
   "author": "Yash Singh",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "express": "^4.17.1"
   }
 }

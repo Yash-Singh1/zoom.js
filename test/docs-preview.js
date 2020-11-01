@@ -5,7 +5,7 @@ var app = express();
 
 app.get("/*", (req, res) => {
   if (req.path.includes("favicon.ico")) {
-    res.sendStatus(204);
+    return res.sendStatus(204);
   }
   res.sendFile(req.path.substring(1), {
     root: "../jsdoc/",
@@ -13,3 +13,6 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(1079);
+
+console.log("Go to localhost:1079/index.html to preview the docs");
+console.log();

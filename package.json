@@ -7,8 +7,5 @@
     "build": "python generateJsdoc.py"
   },
   "author": "Yash Singh",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "license": "MIT"
 }

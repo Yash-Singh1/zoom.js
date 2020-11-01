@@ -29,3 +29,7 @@ app.get("/test/auto.html", (req, res) => {
 });
 
 app.listen(1073);
+
+console.log("Go to localhost:1073/test/auto.html for auto tests");
+console.log("Go to localhost:1073/test/interactive.html for interactive tests");
+console.log();
