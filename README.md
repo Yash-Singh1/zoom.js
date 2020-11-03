@@ -99,16 +99,30 @@ The documentation for `zoom.js` is at: [https://yash-singh1.github.io/zoom.js/js
 
 ## Testing
 
+#### Graphical Mode
+
 **_Note: This assumes that you have `NodeJS` installed_**
 To run tests for `zoom.js`:
 
-- Run `git clone https://github.com/Yash-Singh1/zoom.js.git`
+- Run `git clone https://github.com/Yash-Singh1/zoom.js.git` to clone the repository
 - Go to the root of the repositiory: `cd zoom.js/`
 - Run the npm `test` script: `npm run test`
 - Now you can go to: `localhost:1073/test/interactive.html` to run the tests interactively, and `localhost:1073/test/auto.html` to run the tests automatically
 - To run the tests, open up the console and run `test()` and there will be a series of zooming and confirm messages in interactive mode, and everything will automatically run in auto mode. Set the start query parameter to true to immediately start testing
 
 To run the tests without `NodeJS`, you can go to: [https://yash-singh1.github.io/zoom.js/test/interactive.html](https://yash-singh1.github.io/zoom.js/test/interactive.html) for interactive and [https://yash-singh1.github.io/zoom.js/test/auto.html](https://yash-singh1.github.io/zoom.js/test/auto.html) for auto.
+
+#### Headless Mode
+
+To run tests in headless mode for `zoom.js`:
+
+- Run `git clone https://github.com/Yash-Singh1/zoom.js.git` to clone the repository
+- Go to the root of the repositiory: `cd zoom.js/`
+- Install `firefox-geckodriver`, on Ubuntu that is: `sudo apt install firefox-geckodriver`
+- Install `chromedriver`, here is a [gist](https://gist.github.com/ziadoz/3e8ab7e944d02fe872c3454d17af31a5)
+- Make sure you have `firefox` and `google-chrome` installed up to date with the drivers
+- Run `npm run headless` to run the headless scripts
+- The logs will appear
 
 ## Building Docs
 
@@ -133,7 +147,6 @@ Docs are available on: [https://yash-singh1.github.io/zoom.js/jsdoc/](https://ya
 
 ## Contributing
 
-Contributions are welcome! You can do anything from adding a new feature to formatting the codebase. Any proper updates are accepted. When creating an issue, make sure that you ran the tests and describe how it is different in other browsers
-
+Contributions are welcome! You can do anything from adding a new feature to formatting the codebase. Any proper updates are accepted. When creating an issue, make sure that you ran the tests and describe how it is different in other browsers.
 
 **_Not rendering properly? View on [Github](https://github.com/Yash-Singh1/zoom.js#readme)_**

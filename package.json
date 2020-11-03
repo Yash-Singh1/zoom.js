@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "npm install && node test/test.js",
-    "docs": "npm install && node test/docs-preview.js"
+    "docs": "npm install && node test/docs-preview.js",
+    "headless": "npm install && node test/headless.js"
   },
   "author": "Yash Singh",
   "license": "MIT",
   "devDependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "selenium-webdriver": "^4.0.0-alpha.7"
   }
 }

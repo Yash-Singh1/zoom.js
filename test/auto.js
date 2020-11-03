@@ -1,3 +1,25 @@
+console.everything = [];
+
+console.log = (function () {
+  var cached_function = console.log;
+
+  return function () {
+    var result = cached_function.apply(this, arguments);
+    console.everything.push(arguments[0]);
+    return result;
+  };
+})();
+
+console.info = (function () {
+  var cached_function = console.log;
+
+  return function () {
+    var result = cached_function.apply(this, arguments);
+    console.everything.push(arguments[0]);
+    return result;
+  };
+})();
+
 function testFunctionality(confirmInt, succeded) {
   confirmed = zoom.get() === confirmInt;
   if (!confirmed) {
