@@ -4,6 +4,16 @@ A cross-browser Javascript Library to zoom in and out
 
 ## Importing
 
+#### Using NPM
+
+`zoom.js` is available on `npm`:
+![https://nodei.co/npm/@saiansh2525/zoom.js.png?downloads=true&stars=true](NPM Badge)
+
+To install it, run:
+```bash
+npm install @saiansh2525/zoom.js
+```
+
 #### Online
 
 To import the `zoom.js` inside your application, include the following code in your HTML file:
