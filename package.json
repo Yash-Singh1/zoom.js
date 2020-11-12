@@ -2,7 +2,23 @@
   "name": "@saiansh2525/zoom.js",
   "version": "1.0.0",
   "description": "A script that hosts test for zoom.js",
-  "main": "index.js",
+  "keywords": [
+    "zoom",
+    "javascript",
+    "html",
+    "jsdoc",
+    "css",
+    "python"
+  ],
+  "homepage": "https://github.com/Yash-Singh1/zoom.js#readme",
+  "bugs": {
+    "url": "https://github.com/Yash-Singh1/zoom.js/issues"
+  },
+  "browser": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yash-Singh1/zoom.js"
+  },
   "scripts": {
     "test": "npm install && node test/test.js",
     "docs": "npm install && node test/docs-preview.js",
