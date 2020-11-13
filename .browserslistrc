@@ -1,0 +1,6 @@
+# Browser support for zoom.js
+last 2 major versions
+not ie < 9
+not firefox < 3.5
+not safari <= 3.2
+not dead
