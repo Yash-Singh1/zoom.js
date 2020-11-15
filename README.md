@@ -9,7 +9,8 @@ A cross-browser Javascript Library to zoom in and out
 #### Locally
 
 `zoom.js` is available on `npm`:
-![https://nodei.co/npm/@saiansh2525/zoom.js.png?downloads=true&stars=true](NPM Badge)
+<br>
+![Npm Badge](https://nodei.co/npm/@saiansh2525/zoom.js.png?downloads=true&stars=true)
 
 To install it, run:
 
