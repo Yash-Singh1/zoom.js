@@ -4,7 +4,7 @@ A cross-browser Javascript Library to zoom in and out
 
 ## Importing
 
-## Using NPM
+### Using NPM
 
 #### Locally
 
@@ -25,7 +25,7 @@ Reference the `unpkg` URL inside your HTML:
 <script src="https://unpkg.com/@saiansh2525/zoom.js@1.0.0/index.js"></script>
 ```
 
-## Without NPM
+### Without NPM
 
 #### Online
 
@@ -35,7 +35,7 @@ To import the `zoom.js` inside your application, include the following code in y
 <script src="https://yash-singh1.github.io/zoom.js/index.js"></script>
 ```
 
-To view the raw code go to => https://yash-singh1.github.io/zoom.js/index.js.
+To view the raw code go to => <https://yash-singh1.github.io/zoom.js/index.js>.
 
 #### Locally
 
