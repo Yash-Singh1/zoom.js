@@ -28,6 +28,8 @@ function testFunctionality(confirmMessage, succeded) {
   confirmed = confirm(confirmMessage);
   if (!confirmed) {
     zoom.reset();
+    console.errored = true;
+    console.everything.push("Failure in testing " + succeded + "!");
     throw new Error("Failure in testing " + succeded + "!");
   } else {
     console.info(succeded + " succeded");
@@ -58,6 +60,7 @@ async function test() {
   testFunctionality("Did you see the page zoom out?", "zoom.reset");
   console.log("SUCCESS!!!");
   zoom.reset();
+  console.errored = false;
   return true;
 }
 

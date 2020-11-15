@@ -24,6 +24,8 @@ function testFunctionality(confirmInt, succeded) {
   confirmed = zoom.get() === confirmInt;
   if (!confirmed) {
     zoom.reset();
+    console.errored = true;
+    console.everything.push("Failure in testing " + succeded + "!");
     throw new Error("Failure in testing " + succeded + "!");
   } else {
     console.info(succeded + " succeded");
@@ -47,6 +49,7 @@ function test() {
   testFunctionality(1, "zoom.reset");
   console.log("SUCCESS!!!");
   zoom.reset();
+  console.errored = false;
   return true;
 }
 
