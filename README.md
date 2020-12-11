@@ -1,4 +1,4 @@
-# `zoom.js`
+<h1 align="center"><code>zoom.js</code><br><br><a href="https://www.npmjs.com/package/@saiansh2525/zoom.js" align="center"><img src="https://badge.fury.io/js/%40saiansh2525%2Fzoom.js.svg"></a></h1>
 
 A cross-browser Javascript Library to zoom in and out
 
@@ -8,9 +8,7 @@ A cross-browser Javascript Library to zoom in and out
 
 #### Locally
 
-`zoom.js` is available on `npm`:
-<br>
-![Npm Badge](https://nodei.co/npm/@saiansh2525/zoom.js.png?downloads=true&stars=true)
+`zoom.js` is available on `npm`
 
 To install it, run:
 
