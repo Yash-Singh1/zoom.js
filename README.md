@@ -1,4 +1,4 @@
-<h1 align="center"><code>zoom.js</code><br><br><a href="https://www.npmjs.com/package/@saiansh2525/zoom.js" align="center"><img src="https://badge.fury.io/js/%40saiansh2525%2Fzoom.js.svg"></a></h1>
+<h1 align="center"><code>zoom.js</code><br><br><a href="https://www.npmjs.com/package/@saiansh2525/zoom.js" align="center"><img src="https://badge.fury.io/js/%40saiansh2525%2Fzoom.js.svg"></a> <a href="https://github.com/prettier/prettier" align="center"><img src="https://camo.githubusercontent.com/c0486311910977832125780d8ef9ac681614939bd1b9328678007156a4648896/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64655f7374796c652d70726574746965722d6666363962342e7376673f7374796c653d666c61742d737175617265"></a></h1>
 
 A cross-browser Javascript Library to zoom in and out
 
