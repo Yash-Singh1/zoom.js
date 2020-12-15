@@ -12,7 +12,7 @@ A cross-browser Javascript Library to zoom in and out
 
 To install it, run:
 
-```bash
+```sh
 npm install @saiansh2525/zoom.js
 ```
 
@@ -40,7 +40,7 @@ To view the raw code go to => <https://yash-singh1.github.io/zoom.js/index.js>.
 
 To use `zoom.js` locally, run:
 
-```bash
+```sh
 curl -s -o- https://yash-singh1.github.io/zoom.js/index.js > zoom.js
 ```
 
@@ -70,7 +70,7 @@ Here are the variables browser support:
 
 The following is the current file layout of the codebase:
 
-```
+```sh
 root/
 |_____ jsdoc/
 |      |_____ fonts/
@@ -150,7 +150,7 @@ To run tests in headless mode for `zoom.js`:
 
 To build the documentation, you must have `python` installed on your computer. Either of the following will build the JsDocs from the root directory of the repository:
 
-```bash
+```sh
 python generateJsdoc.py
 ```
 
