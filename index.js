@@ -1,6 +1,6 @@
 /**
  * @file The main source code for zoom.js
- * @version 1.0.2
+ * @version 1.0.3
  * @author Yash Singh
  * @license MIT
  */
@@ -21,7 +21,7 @@ zoom.name = "zoom.js";
  * @type {string}
  * @constant
  */
-zoom.version = "1.0.2";
+zoom.version = "1.0.3";
 
 /**
  * The license used => MIT

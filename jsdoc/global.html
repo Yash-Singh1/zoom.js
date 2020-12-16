@@ -1,403 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<title>JSDoc: Global</title>
-<script src="scripts/prettify/prettify.js"> </script>
-<script src="scripts/prettify/lang-css.js"> </script>
-<!--[if lt IE 9]>
+  <head>
+    <meta charset="utf-8" />
+    <title>JSDoc: Global</title>
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-<link href="styles/prettify-tomorrow.css" rel="stylesheet" type="text/css"/>
-<link href="styles/jsdoc-default.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
-<div id="main">
-<h1 class="page-title">Global</h1>
-<section>
-<header>
-<h2></h2>
-</header>
-<article>
-<div class="container-overview">
-<dl class="details">
-</dl>
-</div>
-<h3 class="subsection-title">Methods</h3>
-<h4 class="name" id="add"><span class="type-signature"></span>add<span class="signature">(int)</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Additive into the zoom
-</div>
-<h5>Parameters:</h5>
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>int</code></td>
-<td class="type">
-<span class="param-type">number</span>
-</td>
-<td class="description last">The amount in which to zoom in and out.</td>
-</tr>
-</tbody>
-</table>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line113">line 113</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(bool)</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Get the current zoom of the page
-</div>
-<h5>Parameters:</h5>
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>bool</code></td>
-<td class="type">
-<span class="param-type">boolean</span>
-</td>
-<td class="description last">console.logs the current zoom of the page</td>
-</tr>
-</tbody>
-</table>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line76">line 76</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="inverseZoom"><span class="type-signature"></span>inverseZoom<span class="signature">(int)</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Opposite of zoom.zppm, divide the current zoom value
-</div>
-<h5>Parameters:</h5>
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>int</code></td>
-<td class="type">
-<span class="param-type">number</span>
-</td>
-<td class="description last">The amount in which to zoom in and out. Opposite of zoom.zoom</td>
-</tr>
-</tbody>
-</table>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line158">line 158</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="invert"><span class="type-signature"></span>invert<span class="signature">()</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Invert the current zoom value
-</div>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line146">line 146</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="minus"><span class="type-signature"></span>minus<span class="signature">(int)</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Opposite of zoom.add, remove from the zoom value
-</div>
-<h5>Parameters:</h5>
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>int</code></td>
-<td class="type">
-<span class="param-type">number</span>
-</td>
-<td class="description last">The amount in which to zoom in and out. Opposite of zoom.add</td>
-</tr>
-</tbody>
-</table>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line137">line 137</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="reset"><span class="type-signature"></span>reset<span class="signature">()</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Reset the zoom value to original
-</div>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line169">line 169</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="set"><span class="type-signature"></span>set<span class="signature">(int)</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Allows you to set the zoom value to a number
-</div>
-<h5>Parameters:</h5>
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>int</code></td>
-<td class="type">
-<span class="param-type">number</span>
-</td>
-<td class="description last">The integer to set the zoom to</td>
-</tr>
-</tbody>
-</table>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line125">line 125</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="specify"><span class="type-signature"></span>specify<span class="signature">(specifiedFunction, data<span class="signature-attributes">opt</span>)</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    Specify a function given data and the zoom value to set the zoom
-</div>
-<h5>Parameters:</h5>
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Attributes</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>specifiedFunction</code></td>
-<td class="type">
-<span class="param-type">function</span>
-</td>
-<td class="attributes">
-</td>
-<td class="description last">A function given the current zoom as the first argument and the data parameter as the second argument. The returned value will be used for the zoom</td>
-</tr>
-<tr>
-<td class="name"><code>data</code></td>
-<td class="type">
-<span class="param-type">any</span>
-</td>
-<td class="attributes">
-                
-                    &lt;optional&gt;<br/>
-</td>
-<td class="description last">Will be passed into the specifiedFunction as the second argument</td>
-</tr>
-</tbody>
-</table>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line90">line 90</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-<h4 class="name" id="zoom"><span class="type-signature"></span>zoom<span class="signature">(int)</span><span class="type-signature"> → {number}</span></h4>
-<div class="description">
-    A function to zoom in and out cross-browser
-</div>
-<h5>Parameters:</h5>
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name"><code>int</code></td>
-<td class="type">
-<span class="param-type">number</span>
-</td>
-<td class="description last">The scale at which to zoom in or out. The smaller the more it zooms out.</td>
-</tr>
-</tbody>
-</table>
-<dl class="details">
-<dt class="tag-license">License:</dt>
-<dd class="tag-license"><ul class="dummy"><li>MIT</li></ul></dd>
-<dt class="tag-source">Source:</dt>
-<dd class="tag-source"><ul class="dummy"><li>
-<a href="zoom.js.html">zoom.js</a>, <a href="zoom.js.html#line64">line 64</a>
-</li></ul></dd>
-</dl>
-<h5>Returns:</h5>
-<div class="param-desc">
-    The current zoom value
-</div>
-<dl>
-<dt>
-        Type
-    </dt>
-<dd>
-<span class="param-type">number</span>
-</dd>
-</dl>
-</article>
-</section>
-</div>
-<nav>
-<h2><a href="index.html">Home</a></h2><h2><a href="zoom.js.html">Source</a></h2><h3>Global</h3><ul><li><a href="global.html#add">add</a></li><li><a href="global.html#get">get</a></li><li><a href="global.html#inverseZoom">inverseZoom</a></li><li><a href="global.html#invert">invert</a></li><li><a href="global.html#minus">minus</a></li><li><a href="global.html#reset">reset</a></li><li><a href="global.html#set">set</a></li><li><a href="global.html#specify">specify</a></li><li><a href="global.html#zoom">zoom</a></li></ul>
-</nav>
-<br class="clear"/>
-<footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Dec 15 2020 15:36:37 GMT-0800 (Pacific Standard Time)
-</footer>
-<script> prettyPrint(); </script>
-<script src="scripts/linenumber.js"> </script>
-</body>
+    <link
+      href="styles/prettify-tomorrow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="styles/jsdoc-default.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1 class="page-title">Global</h1>
+      <section>
+        <header>
+          <h2></h2>
+        </header>
+        <article>
+          <div class="container-overview">
+            <dl class="details"></dl>
+          </div>
+          <h3 class="subsection-title">Methods</h3>
+          <h4 class="name" id="add">
+            <span class="type-signature"></span>add<span class="signature"
+              >(int)</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">Additive into the zoom</div>
+          <h5>Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><code>int</code></td>
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+                <td class="description last">
+                  The amount in which to zoom in and out.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line113">line 113</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="get">
+            <span class="type-signature"></span>get<span class="signature"
+              >(bool)</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">Get the current zoom of the page</div>
+          <h5>Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><code>bool</code></td>
+                <td class="type">
+                  <span class="param-type">boolean</span>
+                </td>
+                <td class="description last">
+                  console.logs the current zoom of the page
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line76">line 76</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="inverseZoom">
+            <span class="type-signature"></span>inverseZoom<span
+              class="signature"
+              >(int)</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">
+            Opposite of zoom.zppm, divide the current zoom value
+          </div>
+          <h5>Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><code>int</code></td>
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+                <td class="description last">
+                  The amount in which to zoom in and out. Opposite of zoom.zoom
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line158">line 158</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="invert">
+            <span class="type-signature"></span>invert<span class="signature"
+              >()</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">Invert the current zoom value</div>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line146">line 146</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="minus">
+            <span class="type-signature"></span>minus<span class="signature"
+              >(int)</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">
+            Opposite of zoom.add, remove from the zoom value
+          </div>
+          <h5>Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><code>int</code></td>
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+                <td class="description last">
+                  The amount in which to zoom in and out. Opposite of zoom.add
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line137">line 137</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="reset">
+            <span class="type-signature"></span>reset<span class="signature"
+              >()</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">Reset the zoom value to original</div>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line169">line 169</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="set">
+            <span class="type-signature"></span>set<span class="signature"
+              >(int)</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">
+            Allows you to set the zoom value to a number
+          </div>
+          <h5>Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><code>int</code></td>
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+                <td class="description last">The integer to set the zoom to</td>
+              </tr>
+            </tbody>
+          </table>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line125">line 125</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="specify">
+            <span class="type-signature"></span>specify<span class="signature"
+              >(specifiedFunction, data<span class="signature-attributes"
+                >opt</span
+              >)</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">
+            Specify a function given data and the zoom value to set the zoom
+          </div>
+          <h5>Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Attributes</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><code>specifiedFunction</code></td>
+                <td class="type">
+                  <span class="param-type">function</span>
+                </td>
+                <td class="attributes"></td>
+                <td class="description last">
+                  A function given the current zoom as the first argument and
+                  the data parameter as the second argument. The returned value
+                  will be used for the zoom
+                </td>
+              </tr>
+              <tr>
+                <td class="name"><code>data</code></td>
+                <td class="type">
+                  <span class="param-type">any</span>
+                </td>
+                <td class="attributes">&lt;optional&gt;<br /></td>
+                <td class="description last">
+                  Will be passed into the specifiedFunction as the second
+                  argument
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line90">line 90</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+          <h4 class="name" id="zoom">
+            <span class="type-signature"></span>zoom<span class="signature"
+              >(int)</span
+            ><span class="type-signature"> → {number}</span>
+          </h4>
+          <div class="description">
+            A function to zoom in and out cross-browser
+          </div>
+          <h5>Parameters:</h5>
+          <table class="params">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><code>int</code></td>
+                <td class="type">
+                  <span class="param-type">number</span>
+                </td>
+                <td class="description last">
+                  The scale at which to zoom in or out. The smaller the more it
+                  zooms out.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <dl class="details">
+            <dt class="tag-license">License:</dt>
+            <dd class="tag-license">
+              <ul class="dummy">
+                <li>MIT</li>
+              </ul>
+            </dd>
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source">
+              <ul class="dummy">
+                <li>
+                  <a href="zoom.js.html">zoom.js</a>,
+                  <a href="zoom.js.html#line64">line 64</a>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <h5>Returns:</h5>
+          <div class="param-desc">The current zoom value</div>
+          <dl>
+            <dt>Type</dt>
+            <dd>
+              <span class="param-type">number</span>
+            </dd>
+          </dl>
+        </article>
+      </section>
+    </div>
+    <nav>
+      <h2><a href="index.html">Home</a></h2>
+      <h2><a href="zoom.js.html">Source</a></h2>
+      <h3>Global</h3>
+      <ul>
+        <li><a href="global.html#add">add</a></li>
+        <li><a href="global.html#get">get</a></li>
+        <li><a href="global.html#inverseZoom">inverseZoom</a></li>
+        <li><a href="global.html#invert">invert</a></li>
+        <li><a href="global.html#minus">minus</a></li>
+        <li><a href="global.html#reset">reset</a></li>
+        <li><a href="global.html#set">set</a></li>
+        <li><a href="global.html#specify">specify</a></li>
+        <li><a href="global.html#zoom">zoom</a></li>
+      </ul>
+    </nav>
+    <br class="clear" />
+    <footer>
+      Documentation generated by
+      <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Tue Dec 15
+      2020 16:19:09 GMT-0800 (Pacific Standard Time)
+    </footer>
+    <script>
+      prettyPrint();
+    </script>
+    <script src="scripts/linenumber.js"></script>
+  </body>
 </html>

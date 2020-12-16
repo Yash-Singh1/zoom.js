@@ -40,8 +40,7 @@ function testFunctionality(confirmMessage, succeded) {
 function isString(value) {
   isOne = typeof value === "string";
   if (!isOne) {
-    let failMsg =
-      `zoom.${value} doesn't have expected value string, but ${typeof value}`;
+    let failMsg = `zoom.${value} doesn't have expected value string, but ${typeof value}`;
     zoom.reset();
     console.errored = true;
     console.everything.push(failMsg);
