@@ -4,18 +4,18 @@ console.log = (function () {
   var cached_function = console.log;
 
   return function () {
+    console.everything.push(...arguments);
     var result = cached_function.apply(this, arguments);
-    console.everything.push(arguments[0]);
     return result;
   };
 })();
 
 console.info = (function () {
-  var cached_function = console.log;
+  var cached_function = console.info;
 
   return function () {
+    console.everything.push(...arguments);
     var result = cached_function.apply(this, arguments);
-    console.everything.push(arguments[0]);
     return result;
   };
 })();
@@ -23,12 +23,26 @@ console.info = (function () {
 function testFunctionality(confirmInt, succeded) {
   confirmed = zoom.get() === confirmInt;
   if (!confirmed) {
+    let failMsg = `Failure in testing ${succeded}!`;
     zoom.reset();
     console.errored = true;
-    console.everything.push("Failure in testing " + succeded + "!");
-    throw new Error("Failure in testing " + succeded + "!");
+    console.everything.push(failMsg);
+    throw new Error(failMsg);
   } else {
-    console.info(succeded + " succeded");
+    console.info(`${succeded} succeded`);
+  }
+}
+
+function isString(value) {
+  isOne = typeof zoom[value] === "string";
+  if (!isOne) {
+    let failMsg = `zoom.${value} doesn't have expected value string, but ${typeof value}`;
+    zoom.reset();
+    console.errored = true;
+    console.everything.push(failMsg);
+    throw new Error(failMsg);
+  } else {
+    console.info(`zoom.${value} string test succeded`);
   }
 }
 
@@ -47,8 +61,10 @@ function test() {
   testFunctionality(2.5, "zoom.inverseZoom");
   zoom.reset();
   testFunctionality(1, "zoom.reset");
+  isString("version");
+  isString("name");
+  isString("license");
   console.log("SUCCESS!!!");
-  zoom.reset();
   console.errored = false;
   return true;
 }
