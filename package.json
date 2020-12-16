@@ -22,7 +22,8 @@
   "scripts": {
     "test": "npm install && node test/test.js",
     "docs": "npm install && node test/docs-preview.js",
-    "headless": "npm install && node test/headless.js"
+    "headless": "npm install && node test/headless.js",
+    "build:docs": "/usr/bin/python3 generateJsdoc.py && prettier --write ./"
   },
   "author": "Yash Singh",
   "license": "MIT",

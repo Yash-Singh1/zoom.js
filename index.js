@@ -50,6 +50,9 @@ if (
       document.body.style["-moz-transform"] = "scale(1)";
       document.body.style["-moz-transform-origin"] = "0 0";
       document.body.style.zoom = 1;
+      if (typeof webFrame !== "undefined") {
+        webFrame.setZoomFactor(1);
+      }
       return result;
     };
   })();
@@ -69,15 +72,21 @@ zoom.zoom = function (int) {
 
 /**
  * Get the current zoom of the page
- * @param {boolean} bool console.logs the current zoom of the page
+ * @param {boolean} [bool] console.logs the current zoom of the page
  * @returns {number} The current zoom value
  * @license MIT
  */
 zoom.get = function (bool) {
-  if (bool == true) {
-    console.log(parseFloat(document.body.style.zoom));
+  let currentZoom;
+  if (typeof webFrame !== "undefined") {
+    currentZoom = webFrame.getZoomFactor();
+  } else {
+    currentZoom = parseFloat(document.body.style.zoom);
   }
-  return parseFloat(document.body.style.zoom);
+  if (bool == true) {
+    console.log(currentZoom);
+  }
+  return currentZoom;
 };
 
 /**
@@ -88,18 +97,22 @@ zoom.get = function (bool) {
  * @license MIT
  */
 zoom.specify = function (specifiedFunction, data) {
-  document.body.style["-moz-transform"] =
-    "scale(" +
-    specifiedFunction(
-      parseFloat(
-        document.body.style["-moz-transform"].substring(
-          6,
-          document.body.style["-moz-transform"].length - 1
-        )
-      ),
-      data
-    ) +
-    ")";
+  if (typeof webFrame !== "undefined") {
+    webFrame.setZoomFactor(specifiedFunction(webFrame.getZoomFactor(), data));
+  } else {
+    document.body.style["-moz-transform"] =
+      "scale(" +
+      specifiedFunction(
+        parseFloat(
+          document.body.style["-moz-transform"].substring(
+            6,
+            document.body.style["-moz-transform"].length - 1
+          )
+        ),
+        data
+      ) +
+      ")";
+  }
   document.body.style.zoom = specifiedFunction(zoom.get(), data);
   return zoom.get();
 };
@@ -170,5 +183,8 @@ zoom.reset = function () {
   document.body.style["-moz-transform"] = "scale(1)";
   document.body.style["-moz-transform-origin"] = "0 0";
   document.body.style.zoom = 1;
+  if (typeof webFrame !== "undefined") {
+    webFrame.setZoomFactor(1);
+  }
   return 1;
 };

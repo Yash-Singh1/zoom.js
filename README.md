@@ -158,13 +158,11 @@ To run tests in headless mode for `zoom.js`:
 
 ## Building Docs
 
-To build the documentation, you must have `python` installed on your computer. Either of the following will build the JsDocs from the root directory of the repository:
+To build the documentation, you must have `python`, `jsdoc`, and `prettier` installed. The `build:docs` script from `npm` will build the documentation using `jsdoc`:
 
 ```sh
-python generateJsdoc.py
+npm run build:docs
 ```
-
-Optional: To format the codebase, run `prettier --write ./` assuming that you have `prettier` installed.
 
 ## Testing Docs
 
