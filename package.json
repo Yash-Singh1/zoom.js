@@ -1,7 +1,7 @@
 {
   "name": "@saiansh2525/zoom.js",
   "version": "1.0.3",
-  "description": "A script that hosts test for zoom.js",
+  "description": "A cross-browser Javascript Library to zoom in and out",
   "keywords": [
     "zoom",
     "javascript",
