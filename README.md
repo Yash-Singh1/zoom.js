@@ -3,7 +3,7 @@
   <br />
   <br />
   <a href="https://www.npmjs.com/package/@saiansh2525/zoom.js" align="center">
-    <img src="https://badge.fury.io/js/%40saiansh2525%2Fzoom.js.svg">
+    <img src="https://img.shields.io/npm/v/@saiansh2525/zoom.js?style=flat-square">
   </a>
   <a href="https://github.com/prettier/prettier" align="center">
     <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
