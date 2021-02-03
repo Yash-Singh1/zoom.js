@@ -1,6 +1,6 @@
 {
   "name": "@saiansh2525/zoom.js",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A cross-browser Javascript Library to zoom in and out",
   "keywords": [
     "zoom",
@@ -23,7 +23,9 @@
     "test": "npm install && node test/test.js",
     "docs": "npm install && node test/docs-preview.js",
     "headless": "npm install && node test/headless.js",
-    "build:docs": "/usr/bin/python3 generateJsdoc.py && prettier --write ./"
+    "build:docs": "/usr/bin/python3 tasks/generateJsdoc.py && prettier --write ./",
+    "release": "node tasks/release.js",
+    "code-style": "prettier --write ."
   },
   "author": "Yash Singh",
   "license": "MIT",

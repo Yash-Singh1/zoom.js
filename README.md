@@ -31,7 +31,7 @@ npm install @saiansh2525/zoom.js
 Reference the `unpkg` URL inside your HTML:
 
 ```html
-<script src="https://unpkg.com/@saiansh2525/zoom.js@1.0.0/index.js"></script>
+<script src="https://unpkg.com/@saiansh2525/zoom.js/index.js"></script>
 ```
 
 ### Without NPM
