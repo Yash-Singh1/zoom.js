@@ -1,0 +1,9 @@
+{
+  "no-duplicate-heading": false,
+  "no-inline-html": false,
+  "first-line-h1": false,
+  "line-length": {
+    "line_length": 150,
+    "code_blocks": false
+  }
+}
