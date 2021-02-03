@@ -142,7 +142,7 @@ To run tests for `zoom.js`:
 - Run the npm `test` script: `npm run test`
 - Now you can go to: `localhost:1073/test/interactive.html` to run the tests interactively, and `localhost:1073/test/auto.html` to run the tests automatically
 - To run the tests, open up the console and run `test()` and there will be a series of zooming and confirm messages in interactive mode, and
-everything will automatically run in auto mode. Set the start query parameter to true to immediately start testing
+  everything will automatically run in auto mode. Set the start query parameter to true to immediately start testing
 
 To run the tests without `NodeJS`, you can go to: [https://yash-singh1.github.io/zoom.js/test/interactive.html](https://yash-singh1.github.io/zoom.js/test/interactive.html)
 for interactive and [https://yash-singh1.github.io/zoom.js/test/auto.html](https://yash-singh1.github.io/zoom.js/test/auto.html) for auto.

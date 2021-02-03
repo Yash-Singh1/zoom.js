@@ -20,3 +20,4 @@ fs.writeFileSync(
 );
 
 execSync("npm run build:docs");
+execSync("npm run code-style");
