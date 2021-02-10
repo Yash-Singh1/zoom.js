@@ -1,7 +1,5 @@
 <h1 align="center">
   <code>zoom.js</code>
-  <br />
-  <br />
   <a href="https://www.npmjs.com/package/@saiansh2525/zoom.js" align="center">
     <img src="https://img.shields.io/npm/v/@saiansh2525/zoom.js?style=flat-square">
   </a>
