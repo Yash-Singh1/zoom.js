@@ -1,5 +1,4 @@
 name: "CodeQL config"
 paths-ignore:
-  - tasks
   - test
   - jsdoc
