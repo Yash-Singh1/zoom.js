@@ -3,3 +3,4 @@ jsdoc/
 tasks/
 test/
 .markdownlint.json
+.gitattributes
