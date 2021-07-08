@@ -7,6 +7,9 @@
   <a href="https://github.com/prettier/prettier" align="center">
     <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square">
   </a>
+  <a href="https://open.vscode.dev/Yash-Singh1/zoom.js">
+    <img src="https://open.vscode.dev/badges/open-in-vscode.svg" alt="open in vscode" />
+  </a>
 </h1>
 
 A cross-browser Javascript Library to zoom in and out
